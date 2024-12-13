@@ -7,14 +7,14 @@ O objetivo aqui é ilutsrar o conteúdo apresentado ao longo das três aulas da 
 ---
 
 
-### 1. Clonando o Repositório
+## 1. Clonando o Repositório
 
 
 Primeiramente, clone o repositório para o seu ambiente local:
 ```
 git clone https://github.com/seu-usuario/pokedex-frontend.git
 ```
-### 2. Instalando Bibliotecas
+## 2. Instalando Bibliotecas
 
 Para instalar todas as bibliotecas necessárias, abra um terminal e digite o seguinte comando:
 ```
@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ```
 Este comando instala as dependências/bibliotecas, descritas no arquivo `requirements.txt`.
 
-### 3. Instalando Ambiente Virtual
+## 3. Instalando Ambiente Virtual
 
 ainda no terminal, instale o ambiente virtual com o seguinte comando:
 ```
@@ -30,7 +30,7 @@ pip install virtualenv
 ```
 após a instalação ative-o com o seguinte comando:
 
-  ## 3.1 Criando Ambiente Virtual
+  ### 3.1 Criando Ambiente Virtual
 
   após a instalação do ambiente virtual, navegue até o diretório onde você deseja criar o ambiente virtual e execute o seguinte comando:
   ```
@@ -38,7 +38,7 @@ após a instalação ative-o com o seguinte comando:
   ```
   Isso criará um diretório chamado nome_do_ambiente com todos os arquivos necessários para o ambiente virtual.
 
-  ## 3.2 Ativando Ambiente Virtual
+  ### 3.2 Ativando Ambiente Virtual
   ative o ambiente com o seguinte comando:
 
   No Windows:
