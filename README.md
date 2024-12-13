@@ -1,8 +1,6 @@
-# Minha API
+# Pokedex - Frontend
 
-Este pequeno projeto faz parte do material diático da Disciplina **Desenvolvimento Full Stack Básico** 
-
-O objetivo aqui é ilutsrar o conteúdo apresentado ao longo das três aulas da disciplina.
+O projeto **Pokedex** é uma aplicação web que permite gerenciar e exibir informações sobre Pokémons. O usuário pode adicionar novos Pokémons, visualizar uma lista de Pokémons cadastrados, e ouvir áudios relacionados a eles, tudo através de uma interface amigável e interativa.
 
 ---
 
