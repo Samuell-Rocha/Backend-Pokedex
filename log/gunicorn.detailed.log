@@ -1,0 +1,73 @@
+[2024-12-13 21:03:13,683] INFO _log() L97    * Restarting with stat - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:03:31,534] ERROR log_exception() L875  Exception on /uploads/MinhaMusica.mp3 [GET] - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py L875 
+Traceback (most recent call last):
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+TypeError: get_file() missing 1 required positional argument: 'filename'
+[2024-12-13 21:03:32,058] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 21:03:32] "[35m[1mGET /uploads/MinhaMusica.mp3 HTTP/1.1[0m" 500 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:36:12,865] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 21:36:12] "GET /pokemons HTTP/1.1" 200 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:36:55,110] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 21:36:55] "GET /pokemons HTTP/1.1" 200 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:38:12,361] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 21:38:12] "GET /pokemons HTTP/1.1" 200 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:46:39,345] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 21:46:39] "GET /pokemons HTTP/1.1" 200 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:50:19,489] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 21:50:19] "GET /pokemons HTTP/1.1" 200 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:53:49,116] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 21:53:49] "POST /pokemon HTTP/1.1" 200 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:55:19,549] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 21:55:19] "[31m[1mPOST /pokemon HTTP/1.1[0m" 409 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:56:07,934] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 21:56:07] "[31m[1mPOST /pokemon HTTP/1.1[0m" 409 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:56:15,894] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 21:56:15] "[31m[1mPOST /pokemon HTTP/1.1[0m" 409 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:56:31,960] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 21:56:31] "POST /pokemon HTTP/1.1" 200 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:58:00,182] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 21:58:00] "[31m[1mPOST /pokemon HTTP/1.1[0m" 409 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:58:07,028] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 21:58:07] "POST /pokemon HTTP/1.1" 200 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:59:31,066] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 21:59:31] "POST /pokemon HTTP/1.1" 200 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 22:00:02,829] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 22:00:02] "GET /pokemons HTTP/1.1" 200 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 22:08:46,795] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 22:08:46] "GET /pokemons HTTP/1.1" 200 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 22:09:02,380] ERROR log_exception() L875  Exception on /uploads/${pokemon.foto} [GET] - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py L875 
+Traceback (most recent call last):
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+TypeError: get_file() missing 1 required positional argument: 'filename'
+[2024-12-13 22:09:02,402] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 22:09:02] "[35m[1mGET /uploads/${pokemon.foto} HTTP/1.1[0m" 500 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 22:09:02,469] ERROR log_exception() L875  Exception on /uploads/WhatsApp Image 2024-12-05 at 14.31.35.jpeg [GET] - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py L875 
+Traceback (most recent call last):
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+TypeError: get_file() missing 1 required positional argument: 'filename'
+[2024-12-13 22:09:02,480] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 22:09:02] "[35m[1mGET /uploads/WhatsApp%20Image%202024-12-05%20at%2014.31.35.jpeg HTTP/1.1[0m" 500 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 22:09:02,542] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 22:09:02] "[35m[1mGET /uploads/MinhaMusica.mp3 HTTP/1.1[0m" 500 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 22:09:32,548] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 22:09:32] "[35m[1mGET /uploads/${pokemon.foto} HTTP/1.1[0m" 500 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 22:09:34,333] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 22:09:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  

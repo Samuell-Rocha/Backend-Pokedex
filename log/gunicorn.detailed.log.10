@@ -1,0 +1,79 @@
+[2024-12-13 20:52:41,203] INFO _log() L97   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.103:5000 - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:52:41,215] INFO _log() L97   [33mPress CTRL+C to quit[0m - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:52:41,219] INFO _log() L97    * Restarting with stat - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:52:49,763] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 20:52:49] "[33mGET /uploads/MinhaMusica.mp3 HTTP/1.1[0m" 404 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:53:17,248] INFO _log() L97    * Detected change in 'E:\\Pokedex\\Backend\\app.py', reloading - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:53:17,478] INFO _log() L97    * Restarting with stat - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:53:29,981] ERROR log_exception() L875  Exception on /uploads/MinhaMusica.mp3 [GET] - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py L875 
+Traceback (most recent call last):
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+TypeError: get_file() missing 1 required positional argument: 'filename'
+[2024-12-13 20:53:29,999] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 20:53:29] "[35m[1mGET /uploads/MinhaMusica.mp3 HTTP/1.1[0m" 500 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:56:52,624] INFO _log() L97    * Detected change in 'E:\\Pokedex\\Backend\\app.py', reloading - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:56:54,409] INFO _log() L97    * Restarting with stat - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:57:01,461] INFO _log() L97    * Detected change in 'E:\\Pokedex\\Backend\\app.py', reloading - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:57:01,706] INFO _log() L97    * Restarting with stat - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:57:12,886] INFO _log() L97    * Detected change in 'E:\\Pokedex\\Backend\\app.py', reloading - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:57:13,125] INFO _log() L97    * Restarting with stat - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:57:15,729] INFO _log() L97    * Detected change in 'E:\\Pokedex\\Backend\\app.py', reloading - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:57:15,980] INFO _log() L97    * Restarting with stat - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:57:20,839] INFO _log() L97    * Detected change in 'E:\\Pokedex\\Backend\\app.py', reloading - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:57:21,121] INFO _log() L97    * Restarting with stat - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:58:58,939] INFO _log() L97    * Detected change in 'E:\\Pokedex\\Backend\\app.py', reloading - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 20:58:59,314] INFO _log() L97    * Restarting with stat - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:00:11,824] INFO _log() L97    * Detected change in 'E:\\Pokedex\\Backend\\app.py', reloading - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:00:12,076] INFO _log() L97    * Restarting with stat - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:00:22,872] ERROR log_exception() L875  Exception on /uploads/MinhaMusica.mp3 [GET] - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py L875 
+Traceback (most recent call last):
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+TypeError: get_file() missing 1 required positional argument: 'filename'
+[2024-12-13 21:00:22,889] INFO _log() L97   127.0.0.1 - - [13/Dec/2024 21:00:22] "[35m[1mGET /uploads/MinhaMusica.mp3 HTTP/1.1[0m" 500 - - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:00:46,168] INFO _log() L97    * Detected change in 'E:\\Pokedex\\Backend\\app.py', reloading - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:00:46,611] INFO _log() L97    * Restarting with stat - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-13 21:00:54,811] ERROR log_exception() L875  Exception on /uploads/MinhaMusica.mp3 [GET] - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py L875 
+Traceback (most recent call last):
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+TypeError: get_file() missing 1 required positional argument: 'filename'
+[2024-12-13 21:02:36,845] INFO _log() L97    * Restarting with stat - call_trace=C:\Users\samuel\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\_internal.py L97  
